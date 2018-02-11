@@ -1,0 +1,19 @@
+## cstyle latex style
+
+provides a listings style that makes nice looking C code.
+
+
+# Usage:
+
+\usepackage{cstyle}
+
+...
+
+\begin{lstlisting}
+#include <stdio.h>
+
+int main() {
+    printf("Hello World!\n");
+    return 0;
+}
+\end{lstlisting}
