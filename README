@@ -1,19 +1,24 @@
 ## cstyle latex style
-
-provides a listings style that makes nice looking C code.
-
-
 # Usage:
 
-\usepackage{cstyle}
 
-...
+\begin{lstlisting}[style ={cstyle}, language={[Sharp]C}, ]
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-\begin{lstlisting}
-#include <stdio.h>
+public class NewBehaviourScript1 : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-int main() {
-    printf("Hello World!\n");
-    return 0;
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
 \end{lstlisting}
