@@ -1,11 +1,81 @@
 ## cstyle latex style
 # Usage:
 
-\begin{lstlisting}[style ={cstyle}, language={[90]Fortran}, ]
+\begin{lstlisting}[style ={fortran90sty}, language={[90]Fortran}, ]
 
+PROGRAM Biseccion 
+	IMPLICIT NONE
 
+	REAL :: F
+	REAL :: a, b, c, e, x
+	REAL :: Fa, Fb, Fc, FaFb
+
+	
+
+	
+	WRITE(*,*)'Introduce los valores de a y b del intervalo a evaluar' ! el programa pide valores a y b
+	READ (*,*) a, b ! el usuario introduce a y b  
+
+	WRITE(*,*)'Ingresa el error aceptado' ! el programa pide valor de error aceptado
+	READ(*,*) e
+
+	Fa=F(a) !
+	WRITE(*,10) Fa ! 
+	Fb=F(b)
+	WRITE(*,10) Fb !
+
+10 FORMAT(F8.3) ! se le da formato a lo referenciado como 10
+
+	FaFb=Fa*Fb
+	IF (FaFb.GT.0) GO TO 100 ! condicional: las raíces no están en el intervalo a y b 
+
+		15 c=(a+b)/2
+		Fc=F(c)
+	IF (ABS(Fc).LE.e) THEN
+		WRITE (*,20) c
+
+20 FORMAT(5X,'THE ROOT IS='F8.4)
+
+		WRITE(*,30)Fc
+30 FORMAT(5X,'THE VALUE OF FUNCTION AT ROOT',F8.4)
+
+		GO TO 200 ! mando a paro
+
+	ELSE ! si aún el error es mayor
+		FaFb=Fa*Fc
+		WRITE(*,*)FaFb
+	IF (FaFb.LT.0)THEN ! condiciona iterado si el producto es menor que 0
+		b=c
+		Fb=Fc
+		GO TO 15 ! repite lo de 15
+
+	ELSE  
+		a=c
+		Fa=Fc
+		GO TO 15 ! repite lo de 15
+
+	ENDIF ! fin segundo condicional o iterado
+	ENDIF ! fin primer condicional
+
+GO TO 200 ! paro
+
+100 WRITE(*,*)'THE ROOT DOES NOT LIE IN THE INTERVAL'
+PAUSE
+200 STOP
+
+END PROGRAM 
+
+real function f(x)
+implicit none
+real::x
+
+F=EXP(x) + x**3 + 2*x**2 -1
+end function
 
 \end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{lstlisting}[style ={cstyle}, language={[Sharp]C}, ]
 using System.Collections;
 using System.Collections.Generic;
@@ -27,6 +97,7 @@ public class NewBehaviourScript1 : MonoBehaviour
 }
 \end{lstlisting}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ## In the case of matlab, the first {name} with name.m, the second {caption}
 \matlabscript{segundo}{Información de imagen}\\
