@@ -1,6 +1,18 @@
 %In the .sty document with all styles include the next
 %in the .tex call the style as, also include \usepackage{listings}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstdefinestyle{JuliaLocal}{
+    language = Julia, % inherit Julia lang. to add keywords
+    morekeywords = [3]{thompson_sampling}, % define more functions
+    morekeywords = [2]{Beta, Distributions}, % define more types and modules
+}
+
+
+
+
 %\begin{lstlisting}[style ={cstyle}, language={[Sharp]C}]
 %--------------------
 %\end{lstlisting}
