@@ -1,7 +1,11 @@
 ## cstyle latex style
 # Usage:
 
+\begin{lstlisting}[style ={cstyle}, language={[90]Fortran}, ]
 
+
+
+\end{lstlisting}
 \begin{lstlisting}[style ={cstyle}, language={[Sharp]C}, ]
 using System.Collections;
 using System.Collections.Generic;
