@@ -73,6 +73,10 @@ F=EXP(x) + x**3 + 2*x**2 -1
 end function
 
 \end{lstlisting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% julia
+\begin{lstlisting}[style ={JuliaLocal}, language={Julia}, ]
+\end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
