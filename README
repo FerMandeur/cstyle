@@ -105,3 +105,9 @@ public class NewBehaviourScript1 : MonoBehaviour
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ## In the case of matlab, the first {name} with name.m, the second {caption}
 \matlabscript{segundo}{Información de imagen}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   MAPLE
+
+%export as .tex, add the maple.sty to the same directory. is all
