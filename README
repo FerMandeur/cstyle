@@ -6,9 +6,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-## cstyle latex style
-# Usage:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FORTRAN
 
 \begin{lstlisting}[style ={fortran90sty}, language={[90]Fortran}, ]
 
@@ -88,7 +86,7 @@ end function
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%C SHARP
 \begin{lstlisting}[style ={cstyle}, language={[Sharp]C}, ]
 using System.Collections;
 using System.Collections.Generic;
@@ -111,7 +109,7 @@ public class NewBehaviourScript1 : MonoBehaviour
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MATLAB
 ## In the case of matlab, the first {name} with name.m, the second {caption}
 \matlabscript{segundo}{Información de imagen}\\
 
