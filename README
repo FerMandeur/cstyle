@@ -134,6 +134,10 @@ public class NewBehaviourScript1 : MonoBehaviour
 %export as .tex, add the maple.sty to the same directory. is all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%css
+
+\begin{lstlisting}[style=css]
+\end{lstlisting}
+
 \lstdefinelanguage{CSS}{
   keywords={color,background-image:,margin,padding,font,weight,display,position,top,left,right,bottom,list,style,border,size,white,space,min,width, transition:, transform:, transition-property, transition-duration, transition-timing-function},	
   sensitive=true,
@@ -147,7 +151,8 @@ public class NewBehaviourScript1 : MonoBehaviour
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   html5
 
-
+\begin{lstlisting}[style=html5]
+\end{lstlisting}
 
 \lstdefinelanguage{HTML5}{
   language=html,
